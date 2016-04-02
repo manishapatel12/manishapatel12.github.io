@@ -159,9 +159,12 @@ nav {
 .port-5.effect-1{z-index: 9;}
 .port-5.effect-1 img{transition: 0.5s;}
 .port-5.effect-1:hover img{transform: scale(0.5) translateX(-100%); position: relative; z-index: 9; border: 6px solid rgba(255, 255, 255, 0.9);}
-.port-5.effect-1 .text-desc{transform: translateX(100%); opacity: 0; padding: 40px 20px 20px 90px; transition: 0.5s;}
+.port-5.effect-1 .text-desc{transform: translateX(100%); opacity: 0; transition: 0.5s; text-align:justify;}
 .port-5.effect-1:hover .text-desc{transform: translateX(0px); opacity: 1;}
 
+#myModalTitle{
+  text-align: center;
+}
 
 .mix > button{
   background-color: black;
@@ -170,6 +173,11 @@ nav > label {
   font-size: 20px;
   color: white;
 }
+
+/*.mix >img {
+  width: 140;
+  height: 140;
+}*/
 
 select {
   font-size: 20px;

@@ -66,12 +66,12 @@
                 <form class = "cuisine_detail">
                   <div class="port-5 effect-1">
                     <div class="image-box">
-                      <img src="images/rice_pan_cake.jpg" width="300" height="300">
+                      <img id ="modal_cuisine_img" src="images/rice_pan_cake.jpg" width="300" height="300">
                     </div>
                     <div class="text-desc">
-                      <h3>Your Title</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#" class="btn">Learn more</a>
+                      <h3 id="myModalTitle">Recipe</h3>
+                      <p id="myModalDesc"></p>
+                      <!-- <a href="#" class="btn">Learn more</a> -->
                     </div>
                   </div>
                 </form> 
@@ -87,53 +87,53 @@
     <div id="Container_cuisine">
 
       <div class="mix thai">       
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/curry_noodle.jpg" alt="Generic placeholder image" width="140" height="140" onclick="modalImg()"></button> 
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/curry_noodle.jpg" class="Thai Cuisine" name="Curry Noodle" width="140" height="140" onclick="modalImg(this)" alt="Heat the oil in a small saucepan over medium heat. Cook the mushrooms, ginger and shallots until soft, about 3 minutes. Stir in the red curry paste and cook 1 minute. Whisk in the coconut milk, and then add the cabbage, carrots and tofu and cook 5 minutes more. Remove from the heat and stir in the honey, scallions, lime juice and cilantro. Season with salt and pepper. Let cool slightly, and then toss over the noodles."></button> 
       </div>
       <div class="mix thai">       
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/spring_roll.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/spring_roll.jpg" class="Thai Cuisine" name="Spring Roll" alt="Bring a medium saucepan of water to boil. Boil rice vermicelli 3 to 5 minutes, or until al dente, and drain.Fill a large bowl with warm water. Dip one wrapper into the hot water for 1 second to soften. Lay wrapper flat. In a row across the center, place 2 shrimp halves, a handful of vermicelli, basil, mint, cilantro and lettuce, leaving about 2 inches uncovered on each side. Fold uncovered sides inward, then tightly roll the wrapper, beginning at the end with the lettuce. Repeat with remaining ingredients.In a small bowl, mix the fish sauce, water, lime juice, garlic, sugar and chili sauce.In another small bowl, mix the hoisin sauce and peanuts.Serve rolled spring rolls with the fish sauce and hoisin sauce mixtures." width="140" height="140" onclick="modalImg(this)"></button> 
       </div>
       <div class="mix thai">       
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/coconut_curry.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/coconut_curry.jpg" class="Thai Cuisine" name="Coconut curry" alt="Bring 1/4 cup coconut milk and curry paste to boil in large skillet over medium-high heat, whisking constantly. Add bell pepper and onion; sauté 5 minutes. Stir in chicken, remaining coconut milk, sugar and fish sauce. Cook until chicken is cooked through, stirring often, about 5 minutes." width="140" height="140" onclick="modalImg(this)"></button> 
       </div>
       <div class="mix thai">       
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/thai.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/thai.jpg" class="Thai Cuisine" name="Lettuce Wrap" alt="Heat olive oil in a saucepan over medium high heat. Add ground chicken and cook until browned, about 3-5 minutes, making sure to crumble the chicken as it cooks; drain excess fat.Stir in garlic, onion, hoisin sauce, soy sauce, rice wine vinegar, ginger and Sriracha until onions have become translucent, about 1-2 minutes. Stir in chestnuts and green onions until tender, about 1-2 minutes; season with salt and pepper, to taste.To serve, spoon several tablespoons of the chicken mixture into the center of a lettuce leaf, taco-style" width="140" height="140" onclick="modalImg(this)"></button> 
       </div>
     
       <div class="mix indian">       
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/curry_indian.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/curry_indian.jpg" class="Indian Cuisine" name="Indian Curry" alt="Heat oil in a non stick pan, add cumin seeds. When the seeds begin to change colour, add potatoes, carrot, salt and turmeric powder and mix well. Cover and cook.Cut paneer into small cubes. Roughly tear brown bread slices and grind to make fine cCover and continue to cook for 2-3 minutes or till the vegetables are almost done.Add green peas, paneer, tomato puree and bread crumbs and mix well. Cover and cook on low heat till all the vegetables are completely done.Garnish with coriander leaves and serve hot." width="140" height="140" onclick="modalImg(this)"></button> 
       </div>
       <div class="mix indian">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/samosa.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/samosa.jpg" class="Indian Cuisine" name="Samosa" alt="Prepared stuffing of mashed potato,green pea,ginger,garam masala, salt,lemon.Prepare semolina flour and roll into small tortilla.Cut into two piece each tortilla and stuff potato stuffing in it to make cone shape.Bring oil to boil and deep fry each each cone, till it become redish.Samosa is ready to eat with green coriander chutney or tomato sauce" width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix indian">
-          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/dosa.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/dosa.jpg" class="Indian Cuisine" name="Dosa" alt="Add both the rice and urad dal flour into a mixing bowl.Pour water and mix well. the batter has to be smooth and without any lumps and evenly mixed. the consistency should be that of a thick batter but still flowing.Pour the batter from the mixing bowl in another bowl. cover and allow to ferment at room temperature overnight for 9-10 hours or more if required.Once the batter is fermented well, then add salt to the dosa batter and mix well.Heat an iron griddle or tava. smear with oil lightly. take a spoon or ladle with the batter and gently start spreading the dosa in circular rounds. if using non stick pan, then avoid smearing oil on the pan.Since you won't be able to spread the dosa batter properly on the non stick pan.Drizzle oil on the top and sides and let one side cook.When one side of dosa is browned, flip and cook the other side.Fold the dosa and serve hot with coconut chutney or vegetable sambar." width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix indian">
-          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/panipuri.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/panipuri.jpg" class="Indian Cuisine" name="Panipuri" alt="Crack the top of the puri with a spoon.Add 2 to 3 tsp of the boiled potato-onion filling in the poori.Stir the green pani first and then it and the sweet chutney as per your taste.Serve the pani puri immediately.You can also make individual portions with the puris, potato-onion mixture and the pani. Let the individual assemble the pani puri for himself/herself as per his/her taste." width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix indian">
-          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/jalebi.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/jalebi.jpg" class="Indian Cuisine" name="Jalebi" alt="Preparing jalebi batter: in a mixing bowl, take 1 cup (125 grams) all purpose flour or maida. add 2 tbsp besan or gram flour, a pinch of baking soda and ⅛ tsp turmeric powder. Mix all the above dry ingredients with a spoon or spatula.Bring oil to boil and make spiral shape jalebi in it.Deep fry Jalebi and put in sugar water for 10 min.Jalebi is ready to eat" width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix indian">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/kachori.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/kachori.jpg" class="Indian Cuisine" name="Kachori" alt="Sift the flour, salt and baking powder. Add oil and form a bread crumb like mixture.Add water and form a tight dough. Cover with a damp cloth and keep aside.Make equal sized 5-6 balls from the dough. roll into 3-4 inch round on a dusted board.Add some of the stuffing in the center. brush some water on the edges.Bring together all the edges and pinch them. Press the edges downwards below.Roll into a 4-5 inches kachori. Prepare all matar kachoris like these. Keep the kachoris covered with a wet cloth.Now heat oil. at medium flame, fry the kachoris till they become golden, flaky and crisp.Serve matar kachori hot with some coriander chutney or tamarind chutney." width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix indian">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/rice_pan_cake.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/rice_pan_cake.jpg" class="Indian Cuisine" name="Rice pan cake" alt="Finely chop the large onion and other ingredients needed. Slice the shallots very thin.Spoon 1 or 1 & 1/2 ladle full of the batter in hot greased dosa pan.After a minute or two, flip the uttapam and cook in low flame for 2 minutes or until the onions get golden brown and crisp." width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix mexican">
-          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/taco.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/taco.jpg" class="Mexican Cuisine" name="Taco" alt="Start with the salsa so that the flavours have time to develop as you prep the other ingredients.In a small bowl combine the diced tomato, crushed garlic, scallions, cilantro, and red wine vinegar. Season with salt and pepper to taste, and set aside.Heat a large skillet over medium-high heat.Place the diced tempeh in a small bowl and drizzle with two tablespoons of olive oil.Toss to coat well, then sprinkle the cumin, oregano, and chile powder over top, and toss with the tempeh.Heat the remaining tablespoon of olive oil in the skillet, and add the seasoned tempeh.Cook, stirring every couple of minutes, until the tempeh is golden brown on all sides.Remove the tempeh from the skillet and into a bowl.Now you can use the still warm skillet to warm your tortillas (you can also do this in the oven) if you like. If you want to add cheese, place a tortilla in to the warm skillet, flip after about 1 minute, then sprinkle with a bit of cheese. Let it melt slightly, then remove onto a waiting plate." width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix mexican">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/gaucomole.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/gaucomole.jpg" class="Mexican Cuisine" name="Gaucomole" alt="Chop onion,tomato,green chilli,coriander.Mix all chop with mashed Avacodo paste and put some salt ,black pepper and lemon juice" width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix mexican">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/burrito_bowl.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/burrito_bowl.jpg" class="Mexican Cuisine" name="Burrito bowl" alt="Warm 1 Tbsp. oil in a saucepan over medium-high heat. Add rice and cook, stirring, until fragrant, 1 to 2 minutes. Add 1 1/2 cups water and 1/2 tsp. salt. Bring to a boil, cover, reduce heat to low and simmer until water is absorbed, about 15 minutes.Warm remaining 1 Tbsp. oil in a skillet over medium heat. Add garlic and sauté until fragrant, about 30 seconds. Stir in 1/2 cup water, beans, chili powder and cumin. Bring to a simmer and cook until most of liquid has evaporated, 5 to 7 minutes, stirring once or twice. Season lightly with salt.Combine avocados and lime juice in a medium bowl. Divide rice among 4 bowls. Top with bean mixture, corn, tomatoes and avocados. Serve with garnishes and chips on the side, if desired. " width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix mexican">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/burrito.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/burrito.jpg" class="Mexican Cuisine" name="Burrito Wrap" alt="Wrap artichoke hearts in paper towels; squeeze out liquid and coarsely chop. Set sandwich wraps on work surface. Lay 4 cheese slices down center of each, leaving a 1-inch border at top and bottom. Dividing evenly between wraps, layer artichoke pieces, bell pepper, and spinach on top of cheese. Season with salt and pepper.Fold in tops and bottoms of wraps by about 1 inch, then roll tightly from one of the open sides to enclose filling.Wrap tightly in plastic or waxed paper. Refrigerate until ready to serve, up to overnight." width="140" height="140" onclick="modalImg(this)"></button>
       </div>
       <div class="mix indian">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/sandwich_tea.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/sandwich_tea.jpg" class="Indian Cuisine" name="Grill Sandwich" alt="Put potato mashed in between two sides of bread and grill it with butter.Eat with hot tea" width="140" height="140" onclick="modalImg(this)"></button>
       </div>
     </div>
     </main>
