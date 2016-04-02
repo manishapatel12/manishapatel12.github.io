@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cooking recipes">
+    <meta name="author" content="Manisha Patel">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Kuking Taste</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color:black">
+    <section class="navbar-wrapper" id="header_navigation">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Kuking Taste</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./search.html">Search</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <main id="container" style ="background-color:black">
+      <nav>
+          <label>Search Cuisine :</label>
+           <select id="select_cuisine">
+            <option value="all">All</option>
+            <option value=".indian">Indian</option>
+            <option value=".mexican">Mexican</option>
+            <option value=".thai">Thai</option>
+          </select>
+      </nav>
+      <br/>
+      <div class="clear"></div>
+      <div class="modal fade" id="myRecipeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Recipe</h4>
+            </div>
+            <div class="modal-body">
+              <div>
+                <form class = "cuisine_detail">
+                  <div class="port-5 effect-1">
+                    <div class="image-box">
+                      <img src="images/rice_pan_cake.jpg" width="300" height="300">
+                    </div>
+                    <div class="text-desc">
+                      <h3>Your Title</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <a href="#" class="btn">Learn more</a>
+                    </div>
+                  </div>
+                </form> 
+              </div>
+            </div>
+            <div class="modal-footer" style="border-top:none">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" id="sign_in" class="btn btn-primary">Marked as Favorite</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="Container_cuisine">
+
+      <div class="mix thai">       
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/curry_noodle.jpg" alt="Generic placeholder image" width="140" height="140" onclick="modalImg()"></button> 
+      </div>
+      <div class="mix thai">       
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/spring_roll.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+      </div>
+      <div class="mix thai">       
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/coconut_curry.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+      </div>
+      <div class="mix thai">       
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/thai.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+      </div>
+    
+      <div class="mix indian">       
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/curry_indian.jpg" alt="Generic placeholder image" width="140" height="140"></button> 
+      </div>
+      <div class="mix indian">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/samosa.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix indian">
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/dosa.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix indian">
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/panipuri.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix indian">
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/jalebi.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix indian">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/kachori.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix indian">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/rice_pan_cake.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix mexican">
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/taco.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix mexican">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/gaucomole.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix mexican">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/burrito_bowl.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix mexican">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/burrito.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+      <div class="mix indian">
+         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myRecipeModal"><img src="images/sandwich_tea.jpg" alt="Generic placeholder image" width="140" height="140"></button>
+      </div>
+    </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src ="js/index.js"></script>
+  </body>
+</html>
